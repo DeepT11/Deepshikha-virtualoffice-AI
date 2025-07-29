@@ -1,4 +1,5 @@
 import json
+from semantic_intents import classify_semantic
 
 with open('intents.json') as f:
     intents = json.load(f)
@@ -15,5 +16,6 @@ def classify_intent(message):
         for pattern in intent.get("patterns", []):
             if pattern.lower() in message:
                 return intent["tag"]
-
-    return "default"
+        
+        # fall to semantic classification if no keyword or pattern matches
+    return classify_semantic(message)
