@@ -1,0 +1,30 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_bot_purpose
+  - schedule_meeting
+  - ask_summary
+  - assign_task
+  - get_attendance
+  - search_document
+  - match_resume
+  - fallback
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you in your virtual office today?"
+
+  utter_happy:
+    - text: "I'm glad to hear that! How can I assist you further?"
+
+  utter_goodbye:
+    - text: "Goodbye! Let me know if you need anything else."
+
+  utter_ask_bot_purpose:
+    - text: "I'm your virtual office assistant. I can help schedule meetings, assign tasks, summarize discussions, and more."
+
+  utter_fallback:
+    - text: "I'm not sure I understand. Could you rephrase that?"
+  

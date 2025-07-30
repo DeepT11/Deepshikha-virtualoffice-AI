@@ -1,0 +1,108 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: schedule_meeting
+  examples: |
+    - schedule a meeting with the team tomorrow at 4
+    - set up a call with marketing at 3 PM today
+    - book a meeting with Aman next Monday
+
+- intent: ask_summary
+  examples: |
+    - summarize today's meeting
+    - give me the meeting highlights
+    - can you provide the meeting summary?
+
+- intent: assign_task
+  examples: |
+    - assign the design task to Riya
+    - give the report writing job to Aman by Friday
+    - assign the backend task to Mohit
+
+- intent: get_attendance
+  examples: |
+    - who attended the 2 PM meeting?
+    - show me the attendance for yesterday’s call
+    - list participants of today’s team meeting
+
+- intent: search_document
+  examples: |
+    - find the Q1 sales report
+    - locate the project plan document
+    - search for budget sheet 2023
+
+- intent: match_resume
+  examples: |
+    - which resumes match the frontend developer job?
+    - find candidates for the data analyst role
+    - match resumes with the backend JD
+
+- intent: fallback
+  examples: |
+    - bluh bluh
+    - I need help with a purple dragon
+  
+
