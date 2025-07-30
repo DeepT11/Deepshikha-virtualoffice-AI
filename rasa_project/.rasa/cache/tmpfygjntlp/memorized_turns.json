@@ -1,9 +1,0 @@
-{
-  "lookup": {
-    "eJyLrq6NBQAEOAGx": "action_listen",
-    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
-    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
-    "eJydjkEKgDAMBL+SB/iCfkUkVAlS1LQkqZeSv1uod8HbDgzDzs0naEXoxrhZyhygjYEcLwrwwpnUiLtblaQ7iTtagF2IzD8a1YwEh/qv8PEi6oFrNixVSlZyXx7U21Kk": "utter_ask_bot_purpose",
-    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVicXZ8Un5JfEFpUUF+cWpxLkHXRNhU2MBMxR0KA==": "action_listen"
-  }
-}

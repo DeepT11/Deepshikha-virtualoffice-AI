@@ -6,23 +6,9 @@ nlu:
     - hey
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
     - have a nice day
@@ -30,32 +16,16 @@ nlu:
     - bye bye
     - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
 
-
-- intent: mood_unhappy
+- intent: deny
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 
 - intent: bot_challenge
   examples: |
@@ -64,45 +34,49 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: schedule_meeting
+# task info
+- intent: ask_tasks
   examples: |
-    - schedule a meeting with the team tomorrow at 4
-    - set up a call with marketing at 3 PM today
-    - book a meeting with Aman next Monday
+    - show me my tasks for today
+    - what tasks do I have?
+    - list my tasks
+    - what are my tasks?
 
-- intent: ask_summary
+# meetings info
+- intent: ask_meetings
   examples: |
-    - summarize today's meeting
-    - give me the meeting highlights
-    - can you provide the meeting summary?
+    - what meetings do I have today?
+    - show me my meetings
+    - list my meetings
+    - what are my meetings?
 
-- intent: assign_task
+# FAQ intents : password reset
+- intent: ask_faq_pwd_reset
   examples: |
-    - assign the design task to Riya
-    - give the report writing job to Aman by Friday
-    - assign the backend task to Mohit
+    - how do I reset my password?
+    - I forgot my password, what should I do?
+    - can you help me with password reset?
+    - I need to reset my password
 
-- intent: get_attendance
+# FAQ intents : file locations
+- intent: ask_faq_file_locations
   examples: |
-    - who attended the 2 PM meeting?
-    - show me the attendance for yesterday’s call
-    - list participants of today’s team meeting
+    - where can I find my files?
+    - where are my documents stored?    
+    - how do I access my files?
 
-- intent: search_document
+# FAQ intents : tech support
+- intent: ask_faq_tech_support
   examples: |
-    - find the Q1 sales report
-    - locate the project plan document
-    - search for budget sheet 2023
+    - I need tech support
+    - can you help me with tech issues?
+    - I have a tech problem
 
-- intent: match_resume
+# FAQ intents : platform navigation help
+- intent: ask_faq_platform_navigation
   examples: |
-    - which resumes match the frontend developer job?
-    - find candidates for the data analyst role
-    - match resumes with the backend JD
-
-- intent: fallback
-  examples: |
-    - bluh bluh
-    - I need help with a purple dragon
-  
-
+    - how do I navigate this platform?
+    - can you guide me through the platform?    
+    - I need help with platform navigation
+    - where can see my profile?
+    

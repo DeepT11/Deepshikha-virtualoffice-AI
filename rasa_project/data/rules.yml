@@ -1,23 +1,44 @@
 version: "3.1"
+
 rules:
 
-- rule: Greet user
+- rule: Say goodbye anytime the user says goodbye
   steps:
-    - intent: greet
-    - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
 
-- rule: Say goodbye
+- rule: Say 'I am a bot' anytime the user challenges
   steps:
-    - intent: goodbye
-    - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
 
-- rule: Default fallback
+- rule: Ask for tasks when the user asks about tasks
   steps:
-    - intent: fallback
-    - action: utter_fallback
+  - intent: ask_tasks 
+  - action: utter_ask_tasks
 
-- rule: Ask bot purpose
+- rule: Ask for meetings when the user asks about meetings
   steps:
-    - intent: ask_bot_purpose
-    - action: utter_ask_bot_purpose
+  - intent: ask_meetings
+  - action: utter_ask_meetings
+
+- rule: Handle FAQ about password reset
+  steps:
+  - intent: ask_faq_pwd_reset
+  - action: utter_faq_pwd_reset
+
+- rule: Handle FAQ about file locations
+  steps:
+  - intent: ask_faq_file_locations
+  - action: utter_faq_file_locations
+
+- rule: Handle FAQ about tech support
+  steps:
+  - intent: ask_faq_tech_support
+  - action: utter_faq_tech_support
+
+- rule: Handle FAQ about platform navigation
+  steps:
+  - intent: ask_faq_platform_navigation
+  - action: utter_faq_platform_navigation
 

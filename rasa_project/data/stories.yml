@@ -2,16 +2,36 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: greet and ask tasks
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: ask_bot_purpose
-  - action: utter_ask_bot_purpose
+  - intent: ask_tasks
+  - action: utter_ask_tasks
 
-- story: sad path 1
-  steps:
+- story: greet and ask meetings
+  steps:  
   - intent: greet
   - action: utter_greet
+  - intent: ask_meetings
+  - action: utter_ask_meetings
 
+- story: ask password reset FAQ
+  steps:
+  - intent: ask_faq_pwd_reset
+  - action: utter_faq_pwd_reset
 
+- story: ask file locations FAQ
+  steps:
+  - intent: ask_faq_file_locations
+  - action: utter_faq_file_locations
+
+- story: ask tech support FAQ
+  steps:
+  - intent: ask_faq_tech_support
+  - action: utter_faq_tech_support
+  
+- story: ask platform navigation FAQ
+  steps:
+  - intent: ask_faq_platform_navigation
+  - action: utter_faq_platform_navigation 

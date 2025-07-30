@@ -31,8 +31,13 @@ Assist users with navigation, task info, file lookup, and FAQs.
 - Integration with internal APIs
 
 **Tech Stack:**
-- NLP: Rasa / OpenAI GPT / LangChain
+- NLP: Rasa 
 - Backend: FastAPI or Flask
+
+***Type of Queries:**
+- Tasks : "Show me my tasks for today"
+- Meetings : meeting schedules
+- faq : pasword reset, file locations , tech support , platform navigation help
 
 ---
 
