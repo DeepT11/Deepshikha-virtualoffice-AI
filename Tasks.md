@@ -5,6 +5,27 @@ This document outlines all proposed AI-driven ideas.
 
 ---
 
+AI Chatbot
+→ Instant help for commands, task queries, platform navigation
+
+Meeting Transcription & Summarization
+→ Converts voice/video meeting into text
+→ Summarizes key points for easy follow-up
+
+Smart Task Assignment
+→ Automatically assigns tasks based on workload, deadlines, and team roles
+
+Smart Attendance & Pattern Detection
+→ Detects irregular attendance patterns
+→ Generates alerts for drop in activity or performance
+
+Document Search Using Voice Commands
+→ Use speech to find files, folders, or people
+
+Resume Matching & Integration (for HR)
+→ AI-based résumé screening & auto-suggestions for intern/employee placement
+
+
 ## 📌 Overview
 
 The AI module enhances the Virtual Office experience with:
@@ -53,6 +74,18 @@ Convert recorded meetings into actionable and summarized notes.
 **Advanced Options:**
 - Speaker diarization
 - Timestamped key points
+
+
+** Pipeline** -
+1. Audio Input
+2. Speech Recognition
+3. Text Output
+4. Summarization
+5. Key Points Extraction
+6. Output to User
+
+**Sample Queries:**
+Sample audio files site : https://www.uclass.psychol.ucl.ac.uk/Release2/Conversation/AudioOnly/wav/
 
 ---
 
