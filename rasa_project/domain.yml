@@ -9,42 +9,52 @@ intents:
   - mood_unhappy
   - bot_challenge
   - task_info
-  - file_location
+  - meeting_info
+  - navigation_help_steps
+  - search_and_filter_help
+  - access_permissions_help
+  - navigation_troubleshooting
+  - navigate_to_feature
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
 
-  utter_meeting:
-  - text: "I can help you schedule a meeting."
+  utter_navigate_to_feature:
+    - text: "To access your profile settings, click your profile icon in the top-right corner and select 'Settings'."
+    - text: "To open the dashboard, click 'Home' in the left navigation panel."
 
-  utter_task_info:
-  - text: "I can help you with your tasks."
-  - text: "What do you want to know about your tasks?"
+  utter_navigation_help_steps:
+    - text: "To upload a file: Go to the 'Documents' section, click 'Upload', select your file, and hit 'Submit'."
 
-  utter_file_location:
-  - text: "I can help you find your file."
+  utter_search_and_filter_help:
+    - text: "To search for a user, go to the 'Users' tab and type their name in the search bar at the top."
 
-  utter_faq:
-  - text: "I can help you with frequently asked questions."
-  - text: "What do you want to know about the FAQs?"
-  
+  utter_access_permissions_help:
+    - text: "To request access to a project: Open the project page, click 'Request Access', and wait for approval."
+
+  utter_navigation_troubleshooting:
+    - text: "If you can't find your settings page, make sure you're logged in and click the profile icon in the top-right."
+
+actions:
+  - action_fetch_tasks
+  - action_fetch_file
 
 session_config:
   session_expiration_time: 60

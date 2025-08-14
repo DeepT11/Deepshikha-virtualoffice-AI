@@ -29,13 +29,35 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: file location path
-  steps:
-  - intent: file_location
-  - action: utter_file_location
-
-- story: task information path
+- story: user asks for tasks
   steps:
   - intent: task_info
-  - action: utter_task_info
+  - action: action_fetch_tasks
+
+
+- story: User asks for feature location
+  steps:
+    - intent: navigate_to_feature
+    - action: utter_navigate_to_feature
+
+- story: User asks for navigation steps
+  steps:
+    - intent: navigation_help_steps
+    - action: utter_navigation_help_steps
+
+- story: User asks about search or filters
+  steps:
+    - intent: search_and_filter_help
+    - action: utter_search_and_filter_help
+
+- story: User asks about access & permissions
+  steps:
+    - intent: access_permissions_help
+    - action: utter_access_permissions_help
+
+- story: User asks troubleshooting navigation
+  steps:
+    - intent: navigation_troubleshooting
+    - action: utter_navigation_troubleshooting
+
 

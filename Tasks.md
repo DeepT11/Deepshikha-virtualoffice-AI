@@ -60,6 +60,7 @@ Assist users with navigation, task info, file lookup, and FAQs.
 - Meetings : meeting schedules
 - faq : pasword reset, file locations , tech support , platform navigation help
 
+<!-- Every intent you define in nlu.yml, stories, or rules must also be listed in domain.yml, or Rasa won’t recognize it during Core training. -->
 ---
 
 ### 2.  Meeting Transcription & Summarization

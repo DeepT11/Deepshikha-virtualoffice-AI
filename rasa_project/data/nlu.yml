@@ -90,14 +90,6 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: meeting
-  examples: |
-    - schedule a meeting
-    - book a meeting
-    - can you help me with a meeting?
-    - I need to arrange a meeting
-    - set up a meeting
-
 - intent: task_info
   examples: |
     - what is my task?
@@ -106,18 +98,47 @@ nlu:
     - show me my tasks
     - list my tasks
 
-- intent: file_location
-  examples: |
-    - where is my file?
-    - can you help me find my file?
-    - I need to locate a file
-    - show me the file location
-    - help me with my file
 
-- intent: faq
+
+- intent: meeting_info
   examples: |
-    - what is the company policy on remote work?
-    - how do I reset my password?
-    - where can I find the employee handbook?
-    - what are the office hours?
-    - who do I contact for IT support?
+    - what meetings i have today?
+    - can you tell me about my meetings?
+    - I want to know my meeting schedule
+    - show me my meetings
+    - list my meetings
+
+
+- intent: navigate_to_feature
+  examples: |
+    - Where can I find my profile settings?
+    - Show me the dashboard
+    - Take me to the analytics section
+    - How do I open notifications?
+    - Where can I see past orders?
+
+- intent: navigation_help_steps
+  examples: |
+    - How do I upload a file?
+    - How do I download my report?
+    - How do I join a meeting?
+    - How do I submit a request?
+    - How do I share a document?
+
+- intent: search_and_filter_help
+  examples: |
+    - How do I search for a user?
+    - How do I filter tasks by deadline?
+    - How do I sort projects by date?
+
+- intent: access_permissions_help
+  examples: |
+    - How do I request access to a project?
+    - Where do I check my permissions?
+    - How do I invite a team member?
+
+- intent: navigation_troubleshooting
+  examples: |
+    - I can't find my settings page
+    - I lost my meeting link
+    - My dashboard is empty

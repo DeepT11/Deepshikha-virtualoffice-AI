@@ -15,9 +15,30 @@ rules:
 - rule: Fetch tasks when the user asks for their tasks
   steps:
   - intent: task_info
-  - action: utter_task_info
+  - action: action_fetch_tasks
 
-- rule: Fetch file when the user asks for a file
+
+- rule: Navigate to feature when the user asks for feature location
   steps:
-  - intent: file_location
-  - action: utter_file_location
+  - intent: navigate_to_feature
+  - action: utter_navigate_to_feature
+
+- rule: Fetch navigation help steps when the user asks for navigation help
+  steps:
+  - intent: navigation_help_steps
+  - action: utter_navigation_help_steps
+
+- rule: Fetch search and filter help when the user asks for search or filter help
+  steps:
+  - intent: search_and_filter_help
+  - action: utter_search_and_filter_help
+
+- rule: Fetch access and permissions help when the user asks for access or permissions help
+  steps:
+  - intent: access_permissions_help
+  - action: utter_access_permissions_help
+
+- rule: Fetch navigation troubleshooting help when the user asks for navigation troubleshooting help
+  steps:
+  - intent: navigation_troubleshooting
+  - action: utter_navigation_troubleshooting
