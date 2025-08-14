@@ -12,33 +12,12 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Ask for tasks when the user asks about tasks
+- rule: Fetch tasks when the user asks for their tasks
   steps:
-  - intent: ask_tasks 
-  - action: utter_ask_tasks
+  - intent: task_info
+  - action: utter_task_info
 
-- rule: Ask for meetings when the user asks about meetings
+- rule: Fetch file when the user asks for a file
   steps:
-  - intent: ask_meetings
-  - action: utter_ask_meetings
-
-- rule: Handle FAQ about password reset
-  steps:
-  - intent: ask_faq_pwd_reset
-  - action: utter_faq_pwd_reset
-
-- rule: Handle FAQ about file locations
-  steps:
-  - intent: ask_faq_file_locations
-  - action: utter_faq_file_locations
-
-- rule: Handle FAQ about tech support
-  steps:
-  - intent: ask_faq_tech_support
-  - action: utter_faq_tech_support
-
-- rule: Handle FAQ about platform navigation
-  steps:
-  - intent: ask_faq_platform_navigation
-  - action: utter_faq_platform_navigation
-
+  - intent: file_location
+  - action: utter_file_location

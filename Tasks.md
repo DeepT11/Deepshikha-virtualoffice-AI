@@ -62,7 +62,7 @@ Assist users with navigation, task info, file lookup, and FAQs.
 
 ---
 
-### 2. 📝 Meeting Transcription & Summarization
+### 2.  Meeting Transcription & Summarization
 
 **Goal:**  
 Convert recorded meetings into actionable and summarized notes.

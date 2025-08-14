@@ -6,9 +6,23 @@ nlu:
     - hey
     - hello
     - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
 
 - intent: goodbye
   examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
     - bye
     - goodbye
     - have a nice day
@@ -16,6 +30,14 @@ nlu:
     - bye bye
     - see you later
 
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
 
 - intent: deny
   examples: |
@@ -27,6 +49,40 @@ nlu:
     - no way
     - not really
 
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -34,49 +90,34 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-# task info
-- intent: ask_tasks
+- intent: meeting
   examples: |
-    - show me my tasks for today
-    - what tasks do I have?
+    - schedule a meeting
+    - book a meeting
+    - can you help me with a meeting?
+    - I need to arrange a meeting
+    - set up a meeting
+
+- intent: task_info
+  examples: |
+    - what is my task?
+    - can you tell me about my tasks?
+    - I want to know my tasks
+    - show me my tasks
     - list my tasks
-    - what are my tasks?
 
-# meetings info
-- intent: ask_meetings
+- intent: file_location
   examples: |
-    - what meetings do I have today?
-    - show me my meetings
-    - list my meetings
-    - what are my meetings?
+    - where is my file?
+    - can you help me find my file?
+    - I need to locate a file
+    - show me the file location
+    - help me with my file
 
-# FAQ intents : password reset
-- intent: ask_faq_pwd_reset
+- intent: faq
   examples: |
+    - what is the company policy on remote work?
     - how do I reset my password?
-    - I forgot my password, what should I do?
-    - can you help me with password reset?
-    - I need to reset my password
-
-# FAQ intents : file locations
-- intent: ask_faq_file_locations
-  examples: |
-    - where can I find my files?
-    - where are my documents stored?    
-    - how do I access my files?
-
-# FAQ intents : tech support
-- intent: ask_faq_tech_support
-  examples: |
-    - I need tech support
-    - can you help me with tech issues?
-    - I have a tech problem
-
-# FAQ intents : platform navigation help
-- intent: ask_faq_platform_navigation
-  examples: |
-    - how do I navigate this platform?
-    - can you guide me through the platform?    
-    - I need help with platform navigation
-    - where can see my profile?
-    
+    - where can I find the employee handbook?
+    - what are the office hours?
+    - who do I contact for IT support?

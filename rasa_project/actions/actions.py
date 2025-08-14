@@ -7,11 +7,11 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
-from typing import Any, Text, Dict, List
-
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
-
+# from typing import Any, Text, Dict, List
+#
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.executor import CollectingDispatcher
+#
 #
 # class ActionHelloWorld(Action):
 #
@@ -27,9 +27,13 @@ from rasa_sdk.executor import CollectingDispatcher
 #         return []
 
 
-# Fetch Tasks
-class ActionFetchTasks(Action):
+from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
 
+
+class ActionFetchTasks(Action):
+    
     def name(self) -> Text:
         return "action_fetch_tasks"
 
@@ -38,54 +42,32 @@ class ActionFetchTasks(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # Here you would typically fetch tasks from a database or an API
-        tasks = ["Task 1: Complete the report", "Task 2: Attend the meeting", "Task 3: Review the code"]
+        tasks = [
+            {"task": "Complete the project report", "due_date": "2023-10-15"},
+            {"task": "Prepare for the team meeting", "due_date": "2023-10-20"},
+            {"task": "Review the code changes", "due_date": "2023-10-18"}
+        ]
 
-        if tasks:
-            task_list = "\n".join(tasks)
-            dispatcher.utter_message(text=f"Here are your tasks for today:\n{task_list}")
-        else:
-            dispatcher.utter_message(text="You have no tasks for today.")
+        # Format the tasks into a message
+        task_messages = "\n".join([f"{task['task']} (Due: {task['due_date']})" for task in tasks])
+        
+        dispatcher.utter_message(text=f"Here are your tasks:\n{task_messages}")
 
         return []
     
 
-# Fetch Meetings
-class ActionFetchMeetings(Action):
+class ACtionFetchFile(Action):
+    
     def name(self) -> Text:
-        return "action_fetch_meetings"
+        return "action_fetch_file"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        # Here you would typically fetch meetings from a database or an API
-        meetings = ["Meeting 1: Project kickoff at 10 AM", "Meeting 2: Team sync at 2 PM"]
+        # Here you would typically fetch a file from a database or an API
+        file_url = "https://example.com/path/to/your/file.pdf"
+        
+        dispatcher.utter_message(text=f"You can download the file from here: {file_url}")
 
-        if meetings:
-            meeting_list = "\n".join(meetings)
-            dispatcher.utter_message(text=f"Here are your meetings for today:\n{meeting_list}")
-        else:
-            dispatcher.utter_message(text="You have no meetings scheduled for today.")
-
-        return []
-    
-
-# Fetch FAQ
-class ActionFetchFAQ(Action):
-    def name(self) -> Text:
-        return "action_fetch_faq"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        # Here you would typically fetch FAQs from a database or an API
-        faqs = {
-            "password reset": "To reset your password, go to the settings page and click on 'Reset Password'.",
-            "file locations": "You can find your files in the 'Documents' folder.",
-            "tech support": "For tech support, please contact the IT department at it-support@example.com."
-        }
-        query = tracker.latest_message.get('text', '').lower()
-        response = faqs.get(query, "I'm sorry, I don't have information on that topic.")
-        dispatcher.utter_message(text=response)
         return []
