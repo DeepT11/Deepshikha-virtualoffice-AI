@@ -48,7 +48,7 @@ Assist users with navigation, task info, file lookup, and FAQs.
 
 **Key Features:**
 - Natural language query support
-- Contextual help (e.g., "Where is the HR report?")
+- Contextual help 
 - Integration with internal APIs
 
 **Tech Stack:**
