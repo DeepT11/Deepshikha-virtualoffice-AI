@@ -54,7 +54,6 @@ responses:
 
 actions:
   - action_fetch_tasks
-  - action_fetch_file
 
 session_config:
   session_expiration_time: 60
